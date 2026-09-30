@@ -84,14 +84,14 @@
 # a
 
 #While loop
-sad = True
-while sad:
-    print("Sorrry baby")
-    answer=input("is she/he happy now??[yes/no]")
-    if answer=="yes":
-        sad = False
-    else:
-        print("Let's try once again.")
+# sad = True
+# while sad:
+#     print("Sorrry baby")
+#     answer=input("is she/he happy now??[yes/no]")
+#     if answer=="yes":
+#         sad = False
+#     else:
+#         print("Let's try once again.")
 #Output will be 
 # Sorrry baby
 # is she/he happy now??[yes/no]no
@@ -101,4 +101,71 @@ while sad:
 # yes vayesi program terminate hunxa
 
 
-#
+#Data structures
+#1.List
+# particicpant = ["Rohit", "Virat","Gill","Ruturaj"]
+# for name in particicpant:
+#     print(name)
+#Output will be
+# Rohit
+# Virat
+# Gill
+# Ruturaj
+
+# particicpant = ["Rohit", "Virat","Gill","Ruturaj"]
+# for name in particicpant:
+#     print(name, end=" ")
+#output aba end=" " garesi yesto aauxxa horizontal ma aauxa
+# Rohit Virat Gill Ruturaj 
+# by default chai end = "\n" huni raixa teivara vertical ma aauni raixa
+
+particicpant = ["Rohit", "Virat","Gill","Ruturaj"]
+particicpant.append("Bumrah")
+print(particicpant)
+# output will be ['Rohit', 'Virat', 'Gill', 'Ruturaj', 'Bumrah']
+
+#Sir ko note
+# Data structures
+# 1. List
+# participants = ["ram", "sita", "geeta", "hari", "saugat", "uttam"]
+
+
+# for name in participants:
+#     print(name.capitalize())
+
+
+# print(participants)
+
+#                0       1        2       3      4          5
+participants = ["ram", "sita", "geeta", "hari", "saugat", "uttam"]
+# print(participants)
+
+participants.insert(2, "Kushal")
+participants.append("Priya")
+participants.append("uttam")
+participants.extend(["Ramesh", "Roshan"])
+
+# participants.remove("uttam")
+
+
+
+# print(participants)
+
+# while "uttam" in participants:
+#     participants.remove("uttam")
+
+# # print(participants)
+# # \n -> New line
+# for name in participants:
+#     print(name.capitalize(), end=" ")
+
+# Ram Sita Hari 
+
+#do while
+num = 10
+while True:
+    print("Some task")
+    
+    if num == 10:
+        break
+    
