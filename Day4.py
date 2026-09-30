@@ -83,3 +83,22 @@
 # t
 # a
 
+#While loop
+sad = True
+while sad:
+    print("Sorrry baby")
+    answer=input("is she/he happy now??[yes/no]")
+    if answer=="yes":
+        sad = False
+    else:
+        print("Let's try once again.")
+#Output will be 
+# Sorrry baby
+# is she/he happy now??[yes/no]no
+# Let's try once again.
+# Sorrry baby
+# is she/he happy now??[yes/no]yes
+# yes vayesi program terminate hunxa
+
+
+#
