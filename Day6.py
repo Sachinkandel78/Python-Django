@@ -128,3 +128,21 @@
 #Output will be 11 and 770 
 #Function vitra ko print(result)=11 ani function baeeera ko call garera add_result variables ma 11 rakheu 
 #ani tei value lai * 70 garera X variable vitra rakheu ani print(X) garda =770 vayo.
+
+
+def add_sub(a,b):
+    add_result= a+b
+    sub_result=a-b
+    return add_result, sub_result
+
+result= add_sub(6,7)
+print(result)
+#Output will be (13, -1)
+#Function praye tw euta matra kura return garxa rw mathi pani reuturn tw euta matra kura vaeeraxa euta packed tuple vitra 
+# 2 ta value return gareyxa tara return tw euta matra hunxa so aba teslai unpack garna parxa
+
+add_result, sub_result = add_sub(6,7)  # yesto vaye 11 add_result vitra janxa ani -1 sub_result vitra janxa // yo unpacking gareyko ho hai
+print(f"Addition: {add_result}, Subtraction: {sub_result}")
+#ouput will be 
+# (13, -1)
+#Addition: 13, Subtraction: -1
