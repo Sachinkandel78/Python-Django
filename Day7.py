@@ -2,7 +2,7 @@
 #Modules vanya k vanda aba dherai numbers of functions haru lai group garera rakheko file ho jasma aru file haru le tyo functions haru lai call garna sakxa.
 #Yesley garda code lai reuse garna sajilo hunxa ani code lai organize garna sajilo hunxa.
 
-from bill import show_bill_summary 
+from bill import show_bill_summary
 
 user_bag = {}
 

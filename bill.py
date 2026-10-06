@@ -24,18 +24,18 @@ def calculate_discount(cart):
 def calculate_amount_after_discount(cart):
     return calculate_subtotal(cart) - calculate_discount(cart)
         
+
+def calculate_amount_after_discount(cart):
+    return calculate_subtotal(cart) - calculate_discount(cart)
+
 def calculate_tax(cart):
-    tax_amount = calculate_amount_after_discount(cart) * TAX_PERCENTAGE/100
-    
-    return round(tax_amount, 2)
-    
-    
+    taxAmount = calculate_amount_after_discount(cart) * TAX_PERCENTAGE/100
+    return round(taxAmount,2)
+
 def calculate_final_amount(cart):
-    tax_amount = calculate_tax(cart)
-    
-    final_amount = calculate_amount_after_discount(cart) + tax_amount
-    
-    return round(final_amount, 2)
+    final_amount = calculate_amount_after_discount(cart) + calculate_tax(cart)
+    return round(final_amount,2)
+
 
 def show_bill_summary(cart):
     
