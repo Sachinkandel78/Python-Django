@@ -21,10 +21,7 @@ def calculate_discount(cart):
     discount_amount = subtotal * DISCOUNT_PERCENTAGE/100
     return discount_amount
 
-def calculate_amount_after_discount(cart):
-    return calculate_subtotal(cart) - calculate_discount(cart)
         
-
 def calculate_amount_after_discount(cart):
     return calculate_subtotal(cart) - calculate_discount(cart)
 
