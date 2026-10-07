@@ -46,35 +46,46 @@ from datetime import datetime
 # print("Months: ", date_difference.months)
 # print("Days: ",date_difference.days)
 
-# OTPs -> expiry time
-otp = {
-    "value": "123789",
-    "created_at": datetime,
-    "expires_at": datetime
-}
+# 
 
-from datetime import datetime, timedelta
-import time
+import random
+# # print(random.randint(1,11))
 
-otp = {
-    "value": "123456"
-}
+# secret_number = random.randint(1,10)
+# life = 5
+# while True:
+#     print("Life: ", life)
+#     user_guess = int(input("Guess the secret:"))
 
-now = datetime.now()
-# print(now)
+#     if user_guess == secret_number:
+#         print("You won the game")
+#         break
+#     else:
+#         life = -1
+#         if life == 0:
+#             print("You lost the game")
+#             break
+#         else:
+#             print("Wrong guess. Please try again!")
 
-otp["created_at"] = now
+coupons = ["120312392394", "19284792834", "1982739182", "29837983745"]
+winner = random.choices(coupons)
+print(winner)
 
-expiry_time = now + timedelta(seconds=2)
 
-otp["expires_at"] = expiry_time
+cards = [1,2,3,4,5,6,7,8,9,10,"A","J","K","Q"]
 
-print(otp)
+random.shuffle(cards)
+random.shuffle(cards)
+random.shuffle(cards)
+random.shuffle(cards)
+print(cards)
 
-time.sleep(5)
 
-## otp verification
-if otp["expires_at"] < datetime.now():
-        print("Expired")
-else:
-        print("Verified")
+ram = cards[0:3] # yo vanya 0,1,2 (3 include hudaina)
+hari = cards[3:6]
+shyam = cards[6:9]
+
+print(ram)
+print(hari)
+print(shyam)
