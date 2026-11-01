@@ -22,5 +22,5 @@ def courses(request):
 
 
 
-    return HttpResponse("Hello, I am Sachin! My Django Project is Running")
-    # return render(request,"code.html")
+    # return HttpResponse("Hello, I am Sachin! My Django Project is Running")
+    # # return render(request,"code.html")
