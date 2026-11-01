@@ -13,8 +13,9 @@ def home(request):
         "user_authenticated": user_authenticated
     })
 
-def contact(request):
-    print("Someone made request in contact page")
+
+def courses(request):
+    print("Someone made request in courses page")
 
 
 
