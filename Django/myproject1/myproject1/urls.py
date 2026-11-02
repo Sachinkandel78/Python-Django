@@ -1,23 +1,17 @@
-"""
-URL configuration for myproject1 project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/6.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from myapp.views import *
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('myapp.urls')),
+    path("admin/", admin.site.urls),
+    path("", home),
+    # path("contact/", contact),
+    path("about/", about),
+    # yo "about/" vanney path ma pugda about function call hunxa ani yo function le HttpResponse return garxa.
+    path("courses/<course_id>/", course_detail, name="course_detail"),
+    
+    # name diyo vaney yesari lamo courses/<course_id>/ vanera lekheylo path yad garirahanu pareyna sidhai name wala path samjiye vayo tei use garda short and sweet hunxa 
+    # yo chai hami uta templates vitra ko .html file vitra ko href ma use garxau.
+    path("courses/", courses, name="courses"),
 ]
